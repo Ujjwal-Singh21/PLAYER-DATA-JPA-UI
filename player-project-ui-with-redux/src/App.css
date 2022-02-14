@@ -1,0 +1,25 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  height: 50px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+.header {
+  background-color: rgb(207, 253, 238);
+  color: black;
+  height: 50px;
+  text-align: left;
+}
+
+.container {
+  flex: 1;
+  background: rgb(250, 176, 210);
+  min-height: 100%;
+  margin-bottom: 100px;
+  clear: both;
+  overflow: auto;
+}
