@@ -14,8 +14,8 @@ function FindPlayer () {
          {/* one  */}
       <Container>
         <Paper>
-          <h2 style={{ color: 'orange', textAlign: 'center' }}>
-            FIND YOUR PLAYER
+          <h2 style={{ color: 'red', textAlign: 'center' }}>
+            <marquee> - Search and find your favourite player - </marquee>
           </h2>
         </Paper>
 
@@ -28,8 +28,8 @@ function FindPlayer () {
           autoComplete='off'
           
         >              
-          <Button variant='contained' color='warning' href='/player-component'>
-              Back To Home
+          <Button variant='contained' color='success' href='/player-component'>
+              BACK TO HOME
           </Button> <br /> <br /> 
 
           <TextField

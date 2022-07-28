@@ -17,22 +17,26 @@ function UpdatePlayer () {
   const navigate = useNavigate()
 
   const updatePlayer = (event) => {
-    event.preventDefault()
 
     const player = { playerJerseyNumber, playerName, playerRuns, playerCountry }
 
+    // Updation Logic
+    //---------------
     PlayerService.updatePlayer(id, player)
-      .then((response) => {
-        console.log((response).data)
-      })
 
-      .catch(error => {
-        console.log(error)
+      .then((resp) => {
+        console.log(resp.data)
+        alert(playerName.toUpperCase() + ' Profile Updated successfully')
+      })
+      .catch(err => {
+        console.log(err)
       })
 
     navigate('/player-component')
   }
 
+  // Initial render
+  //---------------
   useEffect(() => {
     PlayerService.showPlayerByJerseyNumber(id)
       .then((response) => {
@@ -49,10 +53,16 @@ function UpdatePlayer () {
   return (
     <div>
       <Container>
+
         <Paper elevation={3} style={paperStyle}>
-          <h2 style={{ color: 'deepskyblue', textAlign: 'center' }}>
-            UPDATE EXISTING PLAYER
+          
+          <hr color='red' size='2'  width='75%'  />
+
+          <h2 style={{ color: 'goldenrod', textAlign: 'center' }}>
+            UPDATE {playerName.toUpperCase()} PROFILE
           </h2>
+
+          <hr color='red' size='3' width='100%' /> <br />
 
           <Box
             component='form'
@@ -94,12 +104,14 @@ function UpdatePlayer () {
               onChange={e => setPlayerCountry(e.target.value)}
             />
 
+            <br />
+
             <Button variant='contained' onClick={event => updatePlayer(event)}>
-              Submit
+              UPDATE PLAYER
             </Button>
 
-            <Button variant='contained' color='error' href='/player-component'>
-              Cancel
+            <Button variant='contained' color='success' href='/player-component'>
+              BACK TO HOME
             </Button>
 
           </Box>

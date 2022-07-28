@@ -30,6 +30,7 @@ function UpdatePlayer () {
     PlayerService.updatePlayer(id, player)
       .then((response) => {
         console.log(response.data);
+        alert(playerData.playerName + ' details updted successfully')
       })
       .catch((error) => {
         console.log(error)
@@ -105,12 +106,14 @@ function UpdatePlayer () {
               onChange={e => setPlayerCountry(e.target.value)}
             />
 
+            <br />
+
             <Button variant='contained' onClick={event => updatePlayer(event)}>
-              Submit
+              UPDATE PLAYER 
             </Button>
 
-            <Button variant='contained' color='error' href='/player-component'>
-              Cancel
+            <Button variant='contained' color='success' href='/player-component'>
+              BACK TO HOME
             </Button>
           </Box>
         </Paper>

@@ -14,8 +14,8 @@ function FindPlayer () {
          {/* one  */}
       <Container>
         <Paper>
-          <h2 style={{ color: 'orange', textAlign: 'center' }}>
-            FIND YOUR PLAYER
+          <h2 style={{ color: 'blueviolet', textAlign: 'center' }}>
+            <marquee> - FIND YOUR PLAYER - </marquee>
           </h2>
         </Paper>
 
@@ -29,7 +29,7 @@ function FindPlayer () {
           
         >              
           <Button variant='contained' color='warning' href='/player-component'>
-              Back To Home
+              BACK TO HOME
           </Button> <br /> <br /> 
 
           <TextField

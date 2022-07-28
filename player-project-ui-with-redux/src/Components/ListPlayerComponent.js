@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import {Table,TableBody,TableCell,TableContainer,TableHead,TableRow,Paper,Button, colors} from '@mui/material'
 import PlayerService from '../Services/PlayerService'
 import SaveIcon from '@mui/icons-material/Save'
@@ -47,8 +47,8 @@ function ListPlayerComponent () {
 
   return (
     <div>
-      <h2 style={{ color: 'indigo', textAlign: 'center' }}>
-        <b> PLAYERS LIST </b>
+      <h2 style={{ color: 'brown', textAlign: 'center' }}>
+        <b> <marquee> - LIST OF ALL PLAYERS FROM DATABSE - </marquee> </b>
       </h2>
 
       <Button variant='contained' startIcon={<SaveIcon />} href='/add-player'>

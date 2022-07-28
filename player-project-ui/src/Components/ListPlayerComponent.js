@@ -36,8 +36,8 @@ function ListPlayerComponent () {
   return (
     <div>
      
-        <h2 style={{ color: 'deeppink', textAlign: 'center' }}>
-          <b> PLAYERS LIST </b>
+        <h2 style={{ color: 'red' }}>
+          <b> <marquee> - LIST OF ALL PLAYERS FROM DATABASE - </marquee> </b>
         </h2>
      
       <Button variant='contained'

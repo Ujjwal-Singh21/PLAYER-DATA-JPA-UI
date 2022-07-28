@@ -27,18 +27,23 @@ function ShowPlayerDetail (props) {
 
   return (
     <Container>
+
       <Paper elevation={3} style={paperStyle}>
+
         <h2 style={{ color: 'red', textAlign: 'center' }}>
-          View Player Details
+          {playerData.playerName} Details
         </h2>
+
         <Box
           component='form'
           sx={{ '& > :not(style)': { m: 1 } }}
           noValidate
-          autoComplete='off'
-        >
+          autoComplete='off' >
+
           <TableContainer component={Paper}>
+
             <Table sx={{ minWidth: 650 }} aria-label='simple table'>
+              
               <TableRow>
                 <TableCell>
                   <b> Player Jersey Number : </b>
@@ -78,11 +83,11 @@ function ShowPlayerDetail (props) {
               <br />
               <Button
                 variant='contained'
-                color='error'
+                color='info'
                 style={{ float: 'right' }}
                 href='/player-component'
               >
-                Back To Home
+                BACK TO HOME
               </Button>
 
               <br />

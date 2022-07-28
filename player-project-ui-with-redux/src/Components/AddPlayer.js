@@ -81,16 +81,17 @@ function AddPlayer () {
               onChange={e => setPlayerCountry(e.target.value)}
             />
 
+            <br />
+
             <Button
               variant='contained'
-              color='success'
               onClick={event => addPlayer(event)}
             >
-              Submit
+              ADD PLAYER
             </Button>
 
-            <Button variant='contained' color='error' href='/player-component'>
-              Back to Home
+            <Button variant='contained' color='success' href='/player-component'>
+              BACK TO HOME
             </Button>
 
           </Box>

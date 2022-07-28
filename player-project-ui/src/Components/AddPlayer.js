@@ -37,9 +37,14 @@ function AddPlayer () {
     <div>
       <Container>
         <Paper elevation={3} style={paperStyle}>
-          <h2 style={{ color: 'darkgreen', textAlign: 'center' }}>
+
+        <hr color='blue' size='2'  width='60%'  />
+
+          <h2 style={{ color: 'red', textAlign: 'center' }}>
             ADD NEW PLAYER
           </h2>
+
+        <hr color='blue' size='3' width='75%' /> <br />
 
           <Box
             component='form'
@@ -75,14 +80,16 @@ function AddPlayer () {
               label=' Enter Player Country :'
               variant='outlined'
               onChange={e => setPlayerCountry(e.target.value)}
-            />
+            /> 
 
-            <Button variant='contained' color='success' onClick={event => addPlayer(event)}>
-              Submit
+            <br />
+
+            <Button variant='contained' onClick={event => addPlayer(event)}>
+              ADD PLAYER
             </Button>
 
-            <Button variant='contained' color='error' href='/player-component'>
-              Cancel
+            <Button variant='contained' color='success' href='/player-component'>
+              BACK TO HOME
             </Button>
 
           </Box>

@@ -33,9 +33,15 @@ function FindByName () {
       
     <Container>
       <Paper elevation={3} style={paperStyle}>
+
+      <hr color='blue' size='2'  width='70%'  />
+
         <h2 style={{ color: 'red', textAlign: 'center' }}>
-        SHOW PLAYER BY NAME
+        SEARCHING PLAYER WITH NAME
         </h2>
+
+      <hr color='blue' size='3' width='80%' /> <br />
+
         <Box
           component='form'
           sx={{ '& > :not(style)': { m: 1 } }}

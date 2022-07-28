@@ -9,7 +9,7 @@
 }
 
 .header {
-  background-color: rgb(253, 207, 240);
+  background-color: rgb(255, 61, 158);
   color: black;
   height: 50px;
   text-align: left;
@@ -17,7 +17,7 @@
 
 .container {
   flex: 1;
-  background: rgb(240, 247, 181);
+  background: springgreen;
   min-height: 100%;
   margin-bottom: 100px;
   clear: both;

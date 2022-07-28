@@ -94,11 +94,11 @@ function FindByName () {
               <br />
               <Button
                 variant='contained'
-                color='error'
+                color='info'
                 style={{ float: 'right' }}
                 href='/player-component'
               >
-                Back To Home
+                BACK TO HOME
               </Button>
 
               <br />
